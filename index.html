@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maldición de Halloween</title>
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="background"></div>
+
+    <div class="container">
+        <!-- Pantalla de Error (Si entran sin el QR correcto) -->
+        <div id="errorScreen" class="card">
+            <h1>ACCESO DENEGADO</h1>
+            <p>Escanea tu código QR personal para recibir tu misión.</p>
+        </div>
+
+        <!-- Interfaz del Jugador -->
+        <div id="playerScreen" class="card hidden">
+            <div class="player-header">
+                <span class="label">Sujeto:</span>
+                <span id="realName" class="real-name">Nombre</span>
+            </div>
+            
+            <h1 id="nickname" class="nickname">Mote Halloween</h1>
+            
+            <div class="mission-container">
+                <h3>TU MISIÓN ESTA NOCHE:</h3>
+                <p id="missionText">Texto de la misión...</p>
+            </div>
+
+            <div class="counter-section">
+                <h3>VÍCTIMAS RECLAMADAS</h3>
+                <div id="counter" class="counter">0</div>
+                <button id="addPointBtn" class="action-btn">
+                    ¡MISIÓN CUMPLIDA! (+1)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
